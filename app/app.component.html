@@ -1,0 +1,7 @@
+<div>
+	<div #myElem class="display-color" data-test-id="selectedColor"></div>
+	<div *ngFor="let optn of colorOptions">
+		<div data-test-id="colorPickerOptions" class="options-color" (click)="colorChange(optn)"
+			[ngStyle]="{'background-color': optn}"></div>
+	</div>
+</div>
